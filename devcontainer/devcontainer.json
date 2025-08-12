@@ -1,12 +1,8 @@
 {
   "name": "Rust em Bioinformática (Minimalista)",
-
-  // Aponta para o nosso Dockerfile para construir o ambiente.
   "build": {
     "dockerfile": "Dockerfile"
   },
-
-  // Configura o VS Code com extensões e definições úteis.
   "customizations": {
     "vscode": {
       "settings": {
@@ -21,12 +17,8 @@
       ]
     }
   },
-
-  // Libera a porta 8080 para os projetos web da jornada.
   "forwardPorts": [
     8080
   ],
-
-  // Especifica o usuário com o qual o Codespaces deve operar.
   "remoteUser": "vscode"
 }
