@@ -2,7 +2,7 @@
 
 ![Status da Jornada](https://img.shields.io/badge/Jornada-Em%20Andamento-brightgreen)
 ![Linguagem](https://img.shields.io/badge/Linguagem-Rust-orange)
-![Licença](https://img.shields.io/badge/Licença-MIT-blue)
+[![Licença MIT](https://img.shields.io/badge/Licença-MIT-blue)](https://opensource.org/licenses/MIT)
 
 Uma jornada pública de 30 dias aprendendo a linguagem de programação Rust do zero, com um foco prático na resolução de problemas de Biologia Computacional e Bioinformática.
 
