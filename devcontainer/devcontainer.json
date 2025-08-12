@@ -22,6 +22,5 @@
   "forwardPorts": [
     8080
   ],
-  // Garante que o Codespace faça login com o usuário que criamos no Dockerfile.
   "remoteUser": "vscode"
 }
