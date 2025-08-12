@@ -44,8 +44,20 @@ Se ainda não o fez, visite [https://www.rust-lang.org/tools/install](https://ww
 
 ```bash
 # Para Linux e macOS
-curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+Aparecerá uma lista de opções, aperte `Enter`:
+```
+1) Proceed with standard installation (default - just press enter)
+2) Customize installation
+3) Cancel installation
+>
+```
+Assim que finalizar a instalação do RUST, cole o seguinte comando no terminal:
+```
+. "$HOME/.cargo/env"
+```
+Pronto! O RUST está instalado e pronto para ser usado, teste o comando abaixo para verificar a instalação.
 
 Siga as instruções na tela. Após a conclusão, abra um **novo terminal** e verifique se a instalação funcionou:
 
