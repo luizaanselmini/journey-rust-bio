@@ -1,16 +1,13 @@
-# Passo 1: Comece com uma imagem base genérica e estável para Dev Containers.
-# Ela já vem com um usuário não-root ('vscode') e 'sudo' configurados.
-FROM mcr.microsoft.com/devcontainers/base:bookworm
+# Passo 1: Use a imagem oficial do Rust baseada no Debian Bookworm.
+# ELA JÁ VEM COM RUST (rustup, cargo) INSTALADO em /usr/local/cargo/bin.
+FROM rust:bookworm
 
-# Passo 2: Mude para o usuário 'root' para instalar pacotes de sistema.
-USER root
-
-# Passo 3: Instale todas as nossas dependências de sistema necessárias.
-# Adicionamos 'curl' para poder baixar o instalador do Rust.
+# Passo 2: Instale as dependências do sistema e ferramentas essenciais como 'root'.
+# 'sudo' é necessário para dar permissões ao nosso usuário de desenvolvimento.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     # Ferramentas essenciais
-    curl \
+    sudo \
     build-essential \
     pkg-config \
     # Dependências para crates de bioinformática e web
@@ -28,15 +25,24 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     # Limpa o cache para manter a imagem pequena
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-# Passo 4: Mude de volta para o usuário padrão do container.
+# Passo 3: Crie um usuário não-root 'vscode' e dê a ele permissões de sudo.
+# Esta é a prática padrão e segura para containers de desenvolvimento.
+RUN useradd -m -s /bin/bash vscode \
+    && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# A imagem 'rust' instala o cargo em /usr/local/cargo/bin.
+# Adicionamos esta linha explicitamente ao .bashrc do nosso novo usuário.
+# Isso FORÇA o shell do Codespaces a saber onde encontrar o 'cargo'
+# toda vez que um terminal é aberto.
+RUN echo 'export PATH="/usr/local/cargo/bin:$PATH"' >> /home/vscode/.bashrc
+# -----------------------------------------------------------------------------
+
+# Passo 4: Mude para o nosso novo usuário não-root.
 USER vscode
 
-# Passo 5: Instale o Rust (rustup, cargo, etc.) para o usuário 'vscode'.
-# O script do rustup cuida de configurar o PATH corretamente.
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-# Passo 6: Instale os componentes do Rust necessários para o curso.
+# Passo 5: Instale os componentes do Rust que usaremos no curso.
+# Este comando agora funcionará, pois o sistema encontrará 'rustup' no PATH.
 RUN rustup component add rustfmt clippy
 
-# Passo 7: Define o diretório de trabalho padrão.
+# Passo 6: Define o diretório de trabalho padrão dentro do container.
 WORKDIR /workspaces
