@@ -8,7 +8,7 @@ Uma jornada pública de 30 dias aprendendo a linguagem de programação Rust do 
 
 ---
 
-## 🧬 Sobre o Projeto
+## Sobre o Projeto
 
 Este repositório é o meu diário de bordo digital. Durante 30 dias, dedicarei um tempo para aprender, praticar e documentar minha evolução com a linguagem Rust, aplicando os conceitos diretamente em desafios da bioinformática. A intenção é criar um roteiro estruturado que possa, quem sabe, inspirar e ajudar outros que queiram trilhar um caminho semelhante.
 
