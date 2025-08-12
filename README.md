@@ -14,21 +14,21 @@ Este repositório é o meu diário de bordo digital. Durante 30 dias, dedicarei 
 
 ### O que é Bioinformática?
 
-De forma simples, a bioinformática é o campo da ciência que utiliza a computação para entender a biologia. Nós usamos algoritmos e poder computacional para ler, analisar e interpretar o volume massivo de dados gerado por experimentos biológicos. Pense em decifrar um genoma completo, comparar proteínas ou entender como os genes são regulados – são tarefas que seriam impossíveis sem ferramentas computacionais robustas.
+De forma simples, a bioinformática é o campo da ciência que utiliza a computação para entender a biologia. Nós usamos algoritmos e poder computacional para ler, analisar e interpretar o volume massivo de dados gerado por experimentos biológicos. Pense em decifrar um genoma completo, comparar proteínas ou entender como os genes são regulados, nesse ponto que entram ferramentas computacionais robustas.
 
 ### Por que usar Rust para Bioinformática?
 
 A bioinformática exige ferramentas que atendam a um trio de necessidades críticas, e Rust se encaixa perfeitamente nelas:
 
-1.  **Performance Bruta:** As análises genômicas processam gigabytes (ou terabytes) de dados. Rust compila para código de máquina nativo, oferecendo uma velocidade comparável a C e C++, o que significa que análises que levariam dias podem ser concluídas em horas.
+1.  **Performance Bruta:** As análises genômicas processam terabytes (ou pentabytes o.O) de dados. Rust compila para código de máquina nativo, oferecendo uma velocidade comparável a C/C++, o que significa que análises que levariam dias podem ser concluídas em horas.
 
-2.  **Segurança e Confiabilidade:** Um bug de gerenciamento de memória no meio de uma análise de 48 horas pode ser catastrófico. O sistema de *ownership* e *borrowing* de Rust garante a segurança da memória em tempo de compilação, eliminando uma classe inteira de bugs e tornando os programas incrivelmente robustos e confiáveis. Chega de "segmentation faults"!
+2.  **Segurança e Confiabilidade:** Um bug de gerenciamento de memória no meio de uma análise de 48 horas pode ser catastrófico. O sistema de *ownership* e *borrowing* de Rust garante a segurança da memória em tempo de compilação, eliminando uma classe inteira de bugs e tornando os programas incrivelmente robustos e confiáveis. Chega de "segmentation faults"! Quem já sofreu com isso?
 
-3.  **Concorrência sem Medo:** Servidores de pesquisa geralmente possuem dezenas de núcleos de CPU. Rust foi projetado para facilitar a escrita de código que aproveita todos esses núcleos de forma segura, permitindo um paralelismo massivo para acelerar ainda mais as análises.
+3.  **Concorrência sem Medo:** Servidores de pesquisa geralmente possuem dezenas de núcleos de CPU. Rust foi projetado para facilitar a escrita de código que aproveita todos esses núcleos de forma segura, permitindo um *paralelismo* massivo para acelerar ainda mais as análises.
 
 ## A Jornada: Cronograma de 30 Dias
 
-Cada dia da saga terá seu próprio arquivo de anotações e código, documentando o que foi aprendido.
+Cada dia da jornada terá seu próprio arquivo de anotações e código, documentando o que foi aprendido.
 
 <details>
 <summary><strong>Semana 1: A Base de Rust - Primeiros Passos no Código</strong></summary>
@@ -88,7 +88,7 @@ Cada dia da saga terá seu próprio arquivo de anotações e código, documentan
 
 * Cada dia de aprendizado terá seu próprio arquivo `DIA_XX.md` com anotações, teoria e desafios.
 * Os códigos desenvolvidos em cada dia estarão dentro de pastas nomeadas `dia_xx_nome_do_projeto/`.
-* Este `README.md` servirá como o índice central da saga.
+* Este `README.md` servirá como o índice central da jornada.
 
 ## Como Acompanhar ou Contribuir
 
@@ -97,6 +97,7 @@ Este é um projeto de aprendizado pessoal, mas a jornada é pública! Fique à v
 * **Explorar** os arquivos diários para ver o que aprendi.
 * **Sugerir** melhorias, correções ou recursos interessantes abrindo uma **Issue**.
 * **Clonar** o repositório e fazer sua própria Jornada!
+* **Canal do Slack** em andamento!
 
 ## Licença
 
