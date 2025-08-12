@@ -111,7 +111,7 @@ hello_bio/
 
 1.  Abra a pasta `hello_bio` no VS Code.
 2.  Abra o arquivo `src/main.rs`. Ele já virá com um "Hello, world!".
-3.  Vamos modificá-lo para nossa saga. Substitua o conteúdo pelo seguinte:
+3.  Vamos modificá-lo para nossa Jornada (use o Nano, Vim ou outro editor de texto). Substitua o conteúdo pelo seguinte:
 
 ```rust
 // src/main.rs
