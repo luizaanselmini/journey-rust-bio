@@ -66,7 +66,7 @@ cargo --version
 2.  Na aba de Extensões (Extensions), procure e instale a extensão **`rust-analyzer`**. Ela fornecerá autocompletar, detecção de erros em tempo real e muitas outras funcionalidades úteis.
 
 #### Passo 2.1: Usar o Github Codespace
-Abaixo está o link de um Codespace com a instalação básica do Rust necessária para o andamento da Jornada.
+Você pode optar por não fazer uma instalção nativa do RUST, para isso use o GitHub Codespace com uma instalação minimalista do Linux Debian para seguir na Jornada.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/mlfalco-bioinfo/journey-rust-bio)
 
