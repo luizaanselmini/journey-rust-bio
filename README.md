@@ -98,7 +98,3 @@ Este é um projeto de aprendizado pessoal, mas a jornada é pública! Fique à v
 * **Sugerir** melhorias, correções ou recursos interessantes abrindo uma **Issue**.
 * **Clonar** o repositório e fazer sua própria Jornada!
 * **Canal do Slack** em andamento!
-
-## Licença
-
-Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
