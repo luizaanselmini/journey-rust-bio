@@ -1,6 +1,6 @@
 # Jornada Rust 🦀 em Bioinformática - DIA 1
 
-## Título: Começando a Aventura! Instalação e o Primeiro "Olá, Bioinformática!"
+## Começando a Jornada!
 
 Bem-vindo(a) ao primeiro dia da minha jornada de 30 dias aprendendo Rust com foco em biologia computacional! Hoje, o objetivo é preparar o terreno: entender por que Rust é uma escolha tão promissora para a bioinformática, instalar todas as ferramentas necessárias e, claro, fazer nosso primeiro programa funcionar. A jornada de mil linhas de código começa com um único `cargo run`!
 
@@ -146,6 +146,7 @@ Olá, Bioinformática! Dia 1 da minha jornada Rust.
 
 ---
 
-### Reflexão e Próximos Passos
+### Próximos Passos
 
-O primeiro dia foi sobre quebrar a inércia. Instalamos as ferramentas e vimos que o `cargo` torna o processo de iniciar um projeto incrivelmente simples. No **Dia 2**, vamos mergulhar nos blocos de construção fundamentais de qualquer programa: **variáveis e tipos de dados**, e como eles se aplicam ao nosso universo biológico. Até Lá!
+Instalamos as ferramentas e vimos que o `cargo` torna o processo de iniciar um projeto incrivelmente simples. No **Dia 2**, vamos mergulhar nos blocos de construção fundamentais de qualquer programa: **variáveis e tipos de dados**, e como eles se aplicam ao nosso universo biológico. 
+Até Lá!
