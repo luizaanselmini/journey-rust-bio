@@ -1,5 +1,4 @@
 # Use a imagem base oficial da Microsoft para desenvolvimento Rust.
-# Ela já vem com rustup, cargo, git e outras ferramentas essenciais.
 FROM mcr.microsoft.com/devcontainers/rust:1-bookworm
 
 # Argumento para manter o contexto do usuário.
@@ -7,23 +6,16 @@ ARG USERNAME=vscode
 USER root
 
 # Atualiza a lista de pacotes e instala as dependências de sistema necessárias.
-# Comentários explicam o porquê de cada ferramenta.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
-    # Ferramentas essenciais de compilação C/C++ e para encontrar bibliotecas.
     build-essential \
     pkg-config \
-    # Necessário para a crate 'ring', uma dependência comum em projetos web com crypto.
     libssl-dev \
-    # Dependências para a biblioteca HTSlib (manipulação de arquivos SAM/BAM/VCF).
-    # Essencial para a crate `rust-htslib` e útil para `rust-bio`.
     zlib1g-dev \
     libbz2-dev \
     liblzma-dev \
     libcurl4-openssl-dev \
     libhts-dev \
-    # Dependências para o backend de crates de GUI como `egui`.
-    # Mesmo que não se renderize uma janela, as dependências de compilação são necessárias.
     libxkbcommon-dev \
     libxcb-render0-dev \
     libxcb-shape0-dev \
@@ -33,7 +25,11 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # Mude de volta para o usuário não-root.
 USER $USERNAME
 
-# Instala componentes essenciais do Rust:
-# 'rustfmt' para formatação de código automática.
-# 'clippy' para linting e sugestões de melhoria de código.
+# Força a instalação do rustup para o usuário atual para garantir que o PATH e
+# o ambiente estejam corretamente configurados. O '-y' automatiza a instalação.
+# Isso garante que ~/.cargo/bin seja criado e populado.
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# Instala os componentes essenciais do Rust: 'rustfmt' e 'clippy'.
+# É importante que isso venha DEPOIS da instalação explícita do rustup.
 RUN rustup component add rustfmt clippy
