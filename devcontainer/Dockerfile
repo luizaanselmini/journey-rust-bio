@@ -1,44 +1,59 @@
-# Passo 1: Use a imagem oficial do Rust. Ela já vem com a toolchain do Rust instalada.
-FROM rust:bookworm
+# Passo 1: Começar com uma imagem Linux minimalista e moderna.
+# 'bookworm-slim' é uma versão enxuta do Debian 12.
+FROM debian:bookworm-slim
 
-# Passo 2: Como 'root', instale as dependências de sistema e a ferramenta 'sudo'.
-USER root
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends \
-    # 'sudo' é necessário para dar permissões ao nosso usuário de desenvolvimento.
-    sudo \
-    # Ferramentas de compilação C/C++ que muitas crates do Rust utilizam.
+# Passo 2: Evitar que instaladores façam perguntas interativas durante o build.
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Passo 3: Instalar, como 'root', as dependências de sistema essenciais.
+# Isso inclui ferramentas para compilar, gerenciar código e bibliotecas C
+# que são necessárias para as crates de bioinformática.
+RUN apt-get update && apt-get -y install --no-install-recommends \
+    # Ferramentas básicas de desenvolvimento e para baixar o Rust
     build-essential \
+    curl \
+    git \
+    sudo \
+    # Bibliotecas C para bioinformática (arquivos BAM/VCF, compressão, etc)
     pkg-config \
-    # Dependências comuns para bioinformática e desenvolvimento web.
     libssl-dev \
     zlib1g-dev \
     libbz2-dev \
     liblzma-dev \
     libcurl4-openssl-dev \
     libhts-dev \
-    # Dependências para o backend de algumas bibliotecas de GUI.
+    # Bibliotecas C para o backend de algumas crates de GUI
     libxkbcommon-dev \
     libxcb-render0-dev \
     libxcb-shape0-dev \
     libxcb-xfixes0-dev \
-    # Limpa o cache do apt para manter a imagem final menor.
-    && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+    # Limpa o cache para manter a imagem final pequena.
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Passo 3: Crie um usuário não-root 'vscode' e adicione-o ao grupo 'sudo'.
+# Passo 4: Criar um usuário não-root 'vscode' para o desenvolvimento.
+# É uma prática de segurança padrão não trabalhar como 'root'.
+# Damos a ele permissão de 'sudo' sem precisar de senha.
 RUN useradd -m -s /bin/bash vscode \
     && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-# Passo 4: Adicione explicitamente o caminho do Rust ao .bashrc do novo usuário.
-# Esta é a correção crucial para garantir que o terminal interativo do Codespaces encontre o 'cargo'.
-RUN echo 'export PATH="/usr/local/cargo/bin:$PATH"' >> /home/vscode/.bashrc
-
-# Passo 5: Mude para o novo usuário não-root.
+# Passo 5: Mudar para o novo usuário não-root.
 USER vscode
+WORKDIR /home/vscode
 
-# Passo 6: Instale os componentes adicionais do Rust que usaremos no curso.
-# Este comando funciona porque 'rustup' já está na imagem e o PATH está correto.
-RUN rustup component add rustfmt clippy
+# Passo 6: Instalar a toolchain completa do Rust (rustc, cargo, rustup).
+# O script é baixado e executado. A flag '-y' automatiza a instalação,
+# aceitando as opções padrão sem precisar de interação.
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-# Passo 7: Define o diretório de trabalho padrão.
+# Passo 7: Adicionar os componentes 'rustfmt' (para formatação) e 'clippy' (para linting).
+# Executamos usando o caminho completo para garantir que funcione, pois o PATH
+# no shell de build pode não ter sido atualizado ainda.
+RUN /home/vscode/.cargo/bin/rustup component add rustfmt clippy
+
+# Passo 8: Forçar a adição do PATH ao .bashrc.
+# Esta é a garantia final de que qualquer novo terminal interativo
+# saberá onde encontrar o 'cargo'.
+RUN echo 'export PATH="/home/vscode/.cargo/bin:$PATH"' >> /home/vscode/.bashrc
+
+# Passo 9: Definir o diretório de trabalho final para o workspace.
 WORKDIR /workspaces
