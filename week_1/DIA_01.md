@@ -120,7 +120,7 @@ hello_bio/
 fn main() {
     // A macro println! imprime texto na console.
     // O '!' indica que estamos chamando uma macro, não uma função comum.
-    println!("Olá, Bioinformática! Dia 1 da minha saga Rust. 🦀");
+    println!("Olá, Bioinformática! Dia 1 da minha jornada Rust.");
 }
 ```
 
@@ -139,7 +139,7 @@ Se tudo deu certo, você verá a seguinte saída no seu terminal:
    Compiling hello_bio v0.1.0 (/path/to/your/project/hello_bio)
     Finished dev [unoptimized + debuginfo] target(s) in 0.50s
      Running `target/debug/hello_bio`
-Olá, Bioinformática! Dia 1 da minha saga Rust. 🦀
+Olá, Bioinformática! Dia 1 da minha jornada Rust.
 ```
 
 **Parabéns! Você acabou de escrever e executar seu primeiro programa em Rust!**
@@ -152,7 +152,7 @@ Olá, Bioinformática! Dia 1 da minha saga Rust. 🦀
 
 ```rust
 fn main() {
-    println!("Olá, Bioinformática! Dia 1 da minha saga Rust. 🦀");
+    println!("Olá, Bioinformática! Dia 1 da minha jornada Rust.");
 }
 ```
 
