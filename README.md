@@ -24,9 +24,9 @@ A bioinformática exige ferramentas que atendam a um trio de necessidades críti
 
 2.  **🛡️ Segurança e Confiabilidade:** Um bug de gerenciamento de memória no meio de uma análise de 48 horas pode ser catastrófico. O sistema de *ownership* e *borrowing* de Rust garante a segurança da memória em tempo de compilação, eliminando uma classe inteira de bugs e tornando os programas incrivelmente robustos e confiáveis. Chega de "segmentation faults"!
 
-3.  ** concurrency> Concorrência sem Medo:** Servidores de pesquisa geralmente possuem dezenas de núcleos de CPU. Rust foi projetado para facilitar a escrita de código que aproveita todos esses núcleos de forma segura, permitindo um paralelismo massivo para acelerar ainda mais as análises.
+3.  **🖥️ Concorrência sem Medo:** Servidores de pesquisa geralmente possuem dezenas de núcleos de CPU. Rust foi projetado para facilitar a escrita de código que aproveita todos esses núcleos de forma segura, permitindo um paralelismo massivo para acelerar ainda mais as análises.
 
-## 🎯 A Saga: Cronograma de 30 Dias
+## 🎯 A Jornada: Cronograma de 30 Dias
 
 Cada dia da saga terá seu próprio arquivo de anotações e código, documentando o que foi aprendido.
 
