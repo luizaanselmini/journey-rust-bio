@@ -1,9 +1,12 @@
 {
-  "name": "Jornada Rust em Bioinformática",
+  "name": "Rust em Bioinformática (Minimalista)",
+
+  // Aponta para o nosso Dockerfile para construir o ambiente.
   "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
+    "dockerfile": "Dockerfile"
   },
+
+  // Configura o VS Code com extensões e definições úteis.
   "customizations": {
     "vscode": {
       "settings": {
@@ -14,13 +17,16 @@
         "rust-lang.rust-analyzer",
         "serayuzgur.crates",
         "tamasfe.even-better-toml",
-        "github.vscode-pull-request-github",
-        "ms-azuretools.vscode-docker"
+        "github.vscode-pull-request-github"
       ]
     }
   },
+
+  // Libera a porta 8080 para os projetos web da jornada.
   "forwardPorts": [
     8080
   ],
+
+  // Especifica o usuário com o qual o Codespaces deve operar.
   "remoteUser": "vscode"
 }
