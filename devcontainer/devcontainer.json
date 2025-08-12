@@ -1,0 +1,32 @@
+{
+  "name": "Jornada Rust em Bioinformática",
+  // Aponta para o nosso Dockerfile para construir a imagem do container.
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  // Configurações e extensões específicas do VS Code.
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Define o rust-analyzer como o formatador padrão para código Rust.
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+      },
+      // Lista de extensões para instalar automaticamente.
+      "extensions": [
+        "rust-lang.rust-analyzer", // OBRIGATÓRIO: O servidor de linguagem para Rust.
+        "serayuzgur.crates", // Ajuda a gerenciar dependências no Cargo.toml.
+        "tamasfe.even-better-toml", // Melhora a visualização de arquivos .toml.
+        "github.vscode-pull-request-github", // Integração com GitHub.
+        "ms-azuretools.vscode-docker" // Ferramentas para interagir com Docker.
+      ]
+    }
+  },
+  // Libera a porta 8080 para que possamos acessar nossos aplicativos web (Dia 25 e 26).
+  "forwardPorts": [
+    8080
+  ],
+  // Define o usuário padrão dentro do container.
+  "remoteUser": "vscode"
+}
