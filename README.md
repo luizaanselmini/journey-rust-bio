@@ -1,6 +1,6 @@
 # Jornada Rust 🦀 em Bioinformática
 
-![Status da Saga](https://img.shields.io/badge/Saga-Em%20Andamento-brightgreen)
+![Status da Jornada](https://img.shields.io/badge/Saga-Em%20Andamento-brightgreen)
 ![Linguagem](https://img.shields.io/badge/Linguagem-Rust-orange)
 ![Licença](https://img.shields.io/badge/Licença-MIT-blue)
 
