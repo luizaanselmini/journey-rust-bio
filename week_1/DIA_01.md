@@ -6,7 +6,7 @@ Bem-vindo(a) ao primeiro dia da minha jornada de 30 dias aprendendo Rust com foc
 
 ---
 
-### 🎯 Objetivos do Dia
+### Objetivos do Dia
 
 1.  **Entender** por que Rust é relevante para a bioinformática.
 2.  **Instalar** o compilador Rust e suas ferramentas (`rustup`, `cargo`).
@@ -15,7 +15,7 @@ Bem-vindo(a) ao primeiro dia da minha jornada de 30 dias aprendendo Rust com foc
 
 ---
 
-### 🧠 Conceitos do Dia (Teoria - 5 min)
+### Conceitos do Dia
 
 #### Por que Rust para Bioinformática?
 
@@ -34,7 +34,7 @@ Ao instalar Rust, você na verdade instala o `rustup`, que é um instalador e ge
 
 ---
 
-### 💻 Mão na Massa (Prática - 10 min)
+### HANDS-ON  
 
 Vamos criar nosso primeiro programa! Siga estes passos no seu terminal.
 
@@ -146,6 +146,6 @@ Olá, Bioinformática! Dia 1 da minha jornada Rust.
 
 ---
 
-### 🤔 Reflexão e Próximos Passos
+### Reflexão e Próximos Passos
 
 O primeiro dia foi sobre quebrar a inércia. Instalamos as ferramentas e vimos que o `cargo` torna o processo de iniciar um projeto incrivelmente simples. No **Dia 2**, vamos mergulhar nos blocos de construção fundamentais de qualquer programa: **variáveis e tipos de dados**, e como eles se aplicam ao nosso universo biológico. Até Lá!
