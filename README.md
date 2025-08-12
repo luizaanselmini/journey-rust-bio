@@ -96,7 +96,7 @@ Este é um projeto de aprendizado pessoal, mas a jornada é pública! Fique à v
 
 * **Explorar** os arquivos diários para ver o que aprendi.
 * **Sugerir** melhorias, correções ou recursos interessantes abrindo uma **Issue**.
-* **Clonar** o repositório e fazer sua própria saga!
+* **Clonar** o repositório e fazer sua própria Jornada!
 
 ## 📜 Licença
 
