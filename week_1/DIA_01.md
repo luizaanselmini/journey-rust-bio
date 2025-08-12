@@ -61,7 +61,7 @@ cargo --version
 
 #### Passo 2.1: Usar o Github Codespace
 Abaixo está o link de um Codespace com a instalação básica do Rust necessária para o andamento da Jornada.
-[![Open in GitHub Codespaces](https://github.com/codespaces/button.svg)](https://github.com/codespaces/new/mlfalco-bioinfo/journey-rust-bio)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/mlfalco-bioinfo/journey-rust-bio)
 
 #### Passo 3: Criar seu Primeiro Projeto
 
