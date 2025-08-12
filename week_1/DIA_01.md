@@ -53,12 +53,6 @@ Aparecerá uma lista de opções, aperte `Enter`:
 3) Cancel installation
 >
 ```
-Assim que finalizar a instalação do RUST, cole o seguinte comando no terminal:
-```
-. "$HOME/.cargo/env"
-```
-Pronto! O RUST está instalado e pronto para ser usado, teste o comando abaixo para verificar a instalação.
-
 Siga as instruções na tela. Após a conclusão, abra um **novo terminal** e verifique se a instalação funcionou:
 
 ```bash
@@ -75,6 +69,17 @@ cargo --version
 Abaixo está o link de um Codespace com a instalação básica do Rust necessária para o andamento da Jornada.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/mlfalco-bioinfo/journey-rust-bio)
+
+Siga o Passo 1, para instalação do RUST no seu Codespace, antes do comando de verificação de instalação `cargo --version`, realize primeiro esse passo para configurar o RUST no seu `$HOME`.
+
+Assim que finalizar a instalação do RUST, cole o seguinte comando no terminal:
+```
+. "$HOME/.cargo/env"
+```
+**Pronto!**
+O RUST está instalado e pronto para ser usado, teste o comando abaixo para verificar a instalação.
+
+**Agora, é só aproveitar a Jornada!**
 
 #### Passo 3: Criar seu Primeiro Projeto
 
