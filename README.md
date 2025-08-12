@@ -33,7 +33,7 @@ Cada dia da saga terá seu próprio arquivo de anotações e código, documentan
 <details>
 <summary><strong>Semana 1: A Base de Rust - Primeiros Passos no Código</strong></summary>
 
-* [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](./DIA_01.md)
+* [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/week_1/DIA_01.md)
 * [**Dia 2:** Variáveis e Tipos Primitivos](./DIA_02.md)
 * [**Dia 3:** Funções, as Enzimas do Código](./DIA_03.md)
 * [**Dia 4:** Controle de Fluxo com `if/else`](./DIA_04.md)
