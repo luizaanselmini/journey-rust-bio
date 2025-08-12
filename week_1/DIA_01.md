@@ -40,7 +40,7 @@ Vamos criar nosso primeiro programa! Siga estes passos no seu terminal.
 
 #### Passo 1: Instalar Rust
 
-Se ainda não o fez, visite [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install) e execute o comando de instalação para seu sistema operacional. Geralmente, é algo assim:
+Se ainda não o fez, visite [RUST](https://www.rust-lang.org/tools/install) e execute o comando de instalação para seu sistema operacional. Geralmente, é algo assim:
 
 ```bash
 # Para Linux e macOS
@@ -146,32 +146,6 @@ Olá, Bioinformática! Dia 1 da minha jornada Rust.
 
 ---
 
-### 💡 Para o Blog e GitHub
-
-**Snippet de Código do Dia:**
-
-```rust
-fn main() {
-    println!("Olá, Bioinformática! Dia 1 da minha jornada Rust.");
-}
-```
-
-**Sugestões para post no LinkedIn/Blog:**
-
-> **Título:** Começando a Aventura! Dia 1 da minha Saga de 30 Dias com Rust para Bioinformática.
->
-> **Corpo:** "Hoje dei o primeiro passo em uma jornada que estou super animado(a) para compartilhar: aprender Rust com foco em Bioinformática! 🚀
->
-> Por que Rust? Pela promessa de performance de C++, mas com garantias de segurança que evitam dores de cabeça com bugs de memória. Para uma área que lida com terabytes de dados genômicos, isso é revolucionário!
->
-> O objetivo de hoje foi simples, mas fundamental: configurar o ambiente e rodar o primeiro "Olá, Mundo!". Ver a mensagem `Olá, Bioinformática! 🦀` no terminal foi o ponto de partida perfeito.
->
-> A jornada será documentada diariamente. Se você tem interesse em programação de alta performance, bioinformática ou apenas quer acompanhar um desafio de aprendizado, siga por aqui!
->
-> #RustLang #Bioinformatics #ComputationalBiology #30DayChallenge #LearnInPublic"
-
----
-
 ### 🤔 Reflexão e Próximos Passos
 
-O primeiro dia foi sobre quebrar a inércia. Instalamos as ferramentas e vimos que o `cargo` torna o processo de iniciar um projeto incrivelmente simples. Amanhã, no **Dia 2**, vamos mergulhar nos blocos de construção fundamentais de qualquer programa: **variáveis e tipos de dados**, e como eles se aplicam ao nosso universo biológico.
+O primeiro dia foi sobre quebrar a inércia. Instalamos as ferramentas e vimos que o `cargo` torna o processo de iniciar um projeto incrivelmente simples. No **Dia 2**, vamos mergulhar nos blocos de construção fundamentais de qualquer programa: **variáveis e tipos de dados**, e como eles se aplicam ao nosso universo biológico. Até Lá!
