@@ -35,7 +35,7 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 
 * [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/week_1/DIA_01.md)
 * [**Dia 2:** Variáveis e Tipos Primitivos](/week_1/DIA_02.md)
-* [**Dia 3:** Funções, as Enzimas do Código](./DIA_03.md)
+* [**Dia 3:** Funções, as Enzimas do Código](/week_1/DIA_03.md)
 * [**Dia 4:** Controle de Fluxo com `if/else`](./DIA_04.md)
 * [**Dia 5:** Strings e Manipulação Básica](./DIA_05.md)
 * [**Dia 6:** Loops para Repetir Análises](./DIA_06.md)
