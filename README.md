@@ -31,7 +31,7 @@ A bioinformática exige ferramentas que atendam a um trio de necessidades críti
 Cada dia da jornada terá seu próprio arquivo de anotações e código, documentando o que foi aprendido.
 
 <details>
-<summary><strong>Semana 1: A Base de Rust - Primeiros Passos no Código</strong></summary>
+<summary><strong>Módulo 1: A Base de Rust - Primeiros Passos no Código</strong></summary>
 
 * [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/week_1/DIA_01.md)
 * [**Dia 2:** Variáveis e Tipos Primitivos](/week_1/DIA_02.md)
@@ -44,7 +44,7 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 </details>
 
 <details>
-<summary><strong>Semana 2: Estruturas e Conceitos Essenciais</strong></summary>
+<summary><strong>Módulo 2: Estruturas e Conceitos Essenciais</strong></summary>
 
 * [**Dia 8:** Ownership, o Conceito Central de Rust](/week_2/DIA_08.md)
 * [**Dia 9:** Borrowing e References](/week_2/DIA_09.md)
@@ -57,7 +57,7 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 </details>
 
 <details>
-<summary><strong>Semana 3: Mergulhando na Bioinformática com Crates</strong></summary>
+<summary><strong>Módulo 3: Mergulhando na Bioinformática com Crates</strong></summary>
 
 * [**Dia 15:** Introdução ao `crates.io` e `rust-bio`](./DIA_15.md)
 * [**Dia 16:** Lendo Arquivos FASTA](./DIA_16.md)
@@ -70,7 +70,7 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 </details>
 
 <details>
-<summary><strong>Semana 4: Análise de Dados e Interfaces</strong></summary>
+<summary><strong>Módulo 4: Análise de Dados e Interfaces</strong></summary>
 
 * [**Dia 22:** Análise de Dados com Polars - Introdução](./DIA_22.md)
 * [**Dia 23:** Lendo CSV com Polars](./DIA_23.md)
