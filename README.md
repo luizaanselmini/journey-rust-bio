@@ -33,54 +33,54 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 <details>
 <summary><strong>Módulo 1: A Base de Rust - Primeiros Passos no Código</strong></summary>
 
-* [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/week_1/DIA_01.md)
-* [**Dia 2:** Variáveis e Tipos Primitivos](/week_1/DIA_02.md)
-* [**Dia 3:** Funções, as Enzimas do Código](/week_1/DIA_03.md)
-* [**Dia 4:** Controle de Fluxo com `if/else`](/week_1/DIA_04.md)
-* [**Dia 5:** Strings e Manipulação Básica](/week_1/DIA_05.md)
-* [**Dia 6:** Loops para Repetir Análises](/week_1/DIA_06.md)
-* [**Dia 7:** Revisão da Semana 1](/week_1/DIA_07.md)
+* [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/module_1/DIA_01.md)
+* [**Dia 2:** Variáveis e Tipos Primitivos](/module_1/DIA_02.md)
+* [**Dia 3:** Funções, as Enzimas do Código](/module_1/DIA_03.md)
+* [**Dia 4:** Controle de Fluxo com `if/else`](/module_1/DIA_04.md)
+* [**Dia 5:** Strings e Manipulação Básica](/module_1/DIA_05.md)
+* [**Dia 6:** Loops para Repetir Análises](/module_1/DIA_06.md)
+* [**Dia 7:** Revisão da Semana 1](/module_1/DIA_07.md)
 
 </details>
 
 <details>
 <summary><strong>Módulo 2: Estruturas e Conceitos Essenciais</strong></summary>
 
-* [**Dia 8:** Ownership, o Conceito Central de Rust](/week_2/DIA_08.md)
-* [**Dia 9:** Borrowing e References](/week_2/DIA_09.md)
-* [**Dia 10:** Structs para Modelar Dados Biológicos](/week_2/DIA_10.md)
-* [**Dia 11:** Enums para Estados e Variações](/week_2/DIA_11.md)
-* [**Dia 12:** `Option` e `Result` para Tratamento de Erros](/week_2/DIA_12.md)
-* [**Dia 13:** Vetores e Coleções](/week_2/DIA_13.md)
-* [**Dia 14:** Revisão da Semana 2](./DIA_14.md)
+* [**Dia 8:** Ownership, o Conceito Central de Rust](/module_2/DIA_08.md)
+* [**Dia 9:** Borrowing e References](/module_2/DIA_09.md)
+* [**Dia 10:** Structs para Modelar Dados Biológicos](/module_2/DIA_10.md)
+* [**Dia 11:** Enums para Estados e Variações](/module_2/DIA_11.md)
+* [**Dia 12:** `Option` e `Result` para Tratamento de Erros](/module_2/DIA_12.md)
+* [**Dia 13:** Vetores e Coleções](/module_2/DIA_13.md)
+* [**Dia 14:** Revisão da Semana 2](module_2/DIA_14.md)
 
 </details>
 
 <details>
 <summary><strong>Módulo 3: Mergulhando na Bioinformática com Crates</strong></summary>
 
-* [**Dia 15:** Introdução ao `crates.io` e `rust-bio`](./DIA_15.md)
-* [**Dia 16:** Lendo Arquivos FASTA](./DIA_16.md)
-* [**Dia 17:** Análise de Sequências com `rust-bio`](./DIA_17.md)
-* [**Dia 18:** Alinhamento de Sequências (Teoria)](./DIA_18.md)
-* [**Dia 19:** Alinhamento na Prática](./DIA_19.md)
-* [**Dia 20:** Buscando Motivos (Pattern Matching)](./DIA_20.md)
-* [**Dia 21:** Revisão da Semana 3](./DIA_21.md)
+* [**Dia 15:** Introdução ao `crates.io` e `rust-bio`](module_3/DIA_15.md)
+* [**Dia 16:** Lendo Arquivos FASTA](module_3/DIA_16.md)
+* [**Dia 17:** Análise de Sequências com `rust-bio`](module_3/DIA_17.md)
+* [**Dia 18:** Alinhamento de Sequências (Teoria)](module_3/DIA_18.md)
+* [**Dia 19:** Alinhamento na Prática](module_3/DIA_19.md)
+* [**Dia 20:** Buscando Motivos (Pattern Matching)](module_3/DIA_20.md)
+* [**Dia 21:** Revisão da Semana 3](module_3/DIA_21.md)
 
 </details>
 
 <details>
 <summary><strong>Módulo 4: Análise de Dados e Interfaces</strong></summary>
 
-* [**Dia 22:** Análise de Dados com Polars - Introdução](./DIA_22.md)
-* [**Dia 23:** Lendo CSV com Polars](./DIA_23.md)
-* [**Dia 24:** Filtrando e Selecionando Dados](./DIA_24.md)
-* [**Dia 25:** Introdução a Interfaces Web com Actix Web](./DIA_25.md)
-* [**Dia 26:** Recebendo Dados via Web](./DIA_26.md)
-* [**Dia 27:** Introdução a Interfaces Gráficas (GUI) com `egui`](./DIA_27.md)
-* [**Dia 28:** Mini-Projeto: Juntando Tudo (Parte 1)](./DIA_28.md)
-* [**Dia 29:** Finalizando o Mini-Projeto (Parte 2)](./DIA_29.md)
-* [**Dia 30:** Conclusão e Próximos Passos](./DIA_30.md)
+* [**Dia 22:** Análise de Dados com Polars - Introdução](module_4/DIA_22.md)
+* [**Dia 23:** Lendo CSV com Polars](module_4/DIA_23.md)
+* [**Dia 24:** Filtrando e Selecionando Dados](module_4/DIA_24.md)
+* [**Dia 25:** Introdução a Interfaces Web com Actix Web](module_4/DIA_25.md)
+* [**Dia 26:** Recebendo Dados via Web](module_4/DIA_26.md)
+* [**Dia 27:** Introdução a Interfaces Gráficas (GUI) com `egui`](module_4/DIA_27.md)
+* [**Dia 28:** Mini-Projeto: Juntando Tudo (Parte 1)](module_4/DIA_28.md)
+* [**Dia 29:** Finalizando o Mini-Projeto (Parte 2)](module_4/DIA_29.md)
+* [**Dia 30:** Conclusão e Próximos Passos](module_4/DIA_30.md)
 
 </details>
 
