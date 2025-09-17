@@ -36,21 +36,21 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 * [**Dia 1:** Olá, Mundo! (Configuração do Ambiente)](/week_1/DIA_01.md)
 * [**Dia 2:** Variáveis e Tipos Primitivos](/week_1/DIA_02.md)
 * [**Dia 3:** Funções, as Enzimas do Código](/week_1/DIA_03.md)
-* [**Dia 4:** Controle de Fluxo com `if/else`](./DIA_04.md)
-* [**Dia 5:** Strings e Manipulação Básica](./DIA_05.md)
-* [**Dia 6:** Loops para Repetir Análises](./DIA_06.md)
-* [**Dia 7:** Revisão da Semana 1](./DIA_07.md)
+* [**Dia 4:** Controle de Fluxo com `if/else`](/week_1/DIA_04.md)
+* [**Dia 5:** Strings e Manipulação Básica](/week_1/DIA_05.md)
+* [**Dia 6:** Loops para Repetir Análises](/week_1/DIA_06.md)
+* [**Dia 7:** Revisão da Semana 1](/week_1/DIA_07.md)
 
 </details>
 
 <details>
 <summary><strong>Semana 2: Estruturas e Conceitos Essenciais</strong></summary>
 
-* [**Dia 8:** Ownership, o Conceito Central de Rust](./DIA_08.md)
-* [**Dia 9:** Borrowing e References](./DIA_09.md)
-* [**Dia 10:** Structs para Modelar Dados Biológicos](./DIA_10.md)
-* [**Dia 11:** Enums para Estados e Variações](./DIA_11.md)
-* [**Dia 12:** `Option` e `Result` para Tratamento de Erros](./DIA_12.md)
+* [**Dia 8:** Ownership, o Conceito Central de Rust](/week_2/DIA_08.md)
+* [**Dia 9:** Borrowing e References](/week_2/DIA_09.md)
+* [**Dia 10:** Structs para Modelar Dados Biológicos](/week_2/DIA_10.md)
+* [**Dia 11:** Enums para Estados e Variações](/week_2/DIA_11.md)
+* [**Dia 12:** `Option` e `Result` para Tratamento de Erros](/week_2/DIA_12.md)
 * [**Dia 13:** Vetores e Coleções](./DIA_13.md)
 * [**Dia 14:** Revisão da Semana 2](./DIA_14.md)
 
