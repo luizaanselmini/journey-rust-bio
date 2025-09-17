@@ -51,7 +51,7 @@ Cada dia da jornada terá seu próprio arquivo de anotações e código, documen
 * [**Dia 10:** Structs para Modelar Dados Biológicos](/week_2/DIA_10.md)
 * [**Dia 11:** Enums para Estados e Variações](/week_2/DIA_11.md)
 * [**Dia 12:** `Option` e `Result` para Tratamento de Erros](/week_2/DIA_12.md)
-* [**Dia 13:** Vetores e Coleções](./DIA_13.md)
+* [**Dia 13:** Vetores e Coleções](/week_2/DIA_13.md)
 * [**Dia 14:** Revisão da Semana 2](./DIA_14.md)
 
 </details>
